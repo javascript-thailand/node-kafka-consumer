@@ -20,6 +20,9 @@ function startConsumer() {
     'metadata.broker.list': 'localhost:9092',
     'group.id': clientId,
     'enable.auto.commit': false
+  },
+  {
+    'auto.offset.reset': 'beginning'
   });
 
   let topicName = 'test-topic';
